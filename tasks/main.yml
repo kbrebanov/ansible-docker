@@ -1,2 +1,14 @@
 ---
 # tasks file for docker
+
+- name: Include distribution specific variables
+  include_vars: "{{ ansible_distribution }}.yml"
+  tags: docker
+
+- include: CentOS.yml
+  when: ansible_distribution == "CentOS"
+  tags: docker
+
+- include: Ubuntu.yml
+  when: ansible_distribution == "Ubuntu"
+  tags: docker
