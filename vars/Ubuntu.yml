@@ -1,2 +1,5 @@
 ---
 # vars file for docker (Ubuntu specific)
+
+docker_packages:
+  - lxc-docker
