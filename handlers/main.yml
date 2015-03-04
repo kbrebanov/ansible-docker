@@ -2,5 +2,5 @@
 # handlers file for docker
 
 - name: restart docker
-  service: name=docker state=restarted
+  service: name={{ docker_service_name }} state=restarted
   tags: docker
