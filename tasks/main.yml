@@ -12,3 +12,7 @@
 - include: Ubuntu.yml
   when: ansible_distribution == "Ubuntu"
   tags: docker
+
+- name: Ensure docker is started and enabled on boot
+  service: name=docker state=started enabled=yes
+  tags: docker
