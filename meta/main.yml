@@ -22,8 +22,8 @@ galaxy_info:
     versions:
   #  - all
   #  - 5
-    - 6
-  #  - 7
+  #  - 6
+    - 7
   #- name: GenericUNIX
   #  versions:
   #  - all
@@ -105,7 +105,7 @@ galaxy_info:
   # Below are all categories currently available. Just as with
   # the platforms above, uncomment those that apply to your role.
   #
-  #categories:
+  categories:
   #- cloud
   #- cloud:ec2
   #- cloud:gce
