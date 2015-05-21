@@ -1,6 +1,8 @@
 docker
 ======
 
+[![Ansible Galaxy](https://img.shields.io/badge/galaxy-kbrebanov.docker-660198.svg)](https://galaxy.ansible.com/list#/roles/3872)
+
 Installs Docker.
 
 Requirements
