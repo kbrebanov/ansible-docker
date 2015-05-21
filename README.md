@@ -18,11 +18,7 @@ Role Variables
 Dependencies
 ------------
 
-CentOS:
-  - kbrebanov.selinux
-
-Ubuntu:
-  - kbrebanov.apparmor
+- kbrebanov.apparmor
 
 Example Playbook
 ----------------
