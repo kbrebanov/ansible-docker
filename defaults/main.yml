@@ -1,2 +1,4 @@
 ---
 # defaults file for docker
+
+docker_version: 1.6.2
