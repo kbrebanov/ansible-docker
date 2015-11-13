@@ -15,7 +15,7 @@ Role Variables
 
 | Name           | Default | Description                  |
 |----------------|---------|------------------------------|
-| docker_version | 1.7.0   | Version of Docker to install |
+| docker_version | 1.9.0   | Version of Docker to install |
 
 Dependencies
 ------------

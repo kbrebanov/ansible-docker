@@ -1,4 +1,4 @@
 ---
 # defaults file for docker
 
-docker_version: 1.7.0
+docker_version: 1.9.0
