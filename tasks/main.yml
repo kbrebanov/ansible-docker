@@ -3,16 +3,24 @@
 
 - name: Include distribution specific variables
   include_vars: "{{ ansible_distribution }}.yml"
-  tags: docker
+  tags:
+    - docker
 
 - include: CentOS.yml
   when: ansible_distribution == "CentOS"
-  tags: docker
+  tags:
+    - docker
 
 - include: Ubuntu.yml
   when: ansible_distribution == "Ubuntu"
-  tags: docker
+  tags:
+    - docker
 
 - name: Ensure docker is started and enabled on boot
-  service: name={{ docker_service_name }} state=started enabled=yes
-  tags: docker
+  become: yes
+  service:
+    name: "{{ docker_service_name }}"
+    state: started
+    enabled: yes
+  tags:
+    - docker
