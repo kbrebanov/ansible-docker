@@ -19,7 +19,7 @@ install:
   - printf '[defaults]\nroles_path=../' >ansible.cfg
 
   # Install role dependencies
-  # ...
+  - ansible-galaxy install kbrebanov.apparmor
 
 script:
   # Basic role syntax check
