@@ -1,7 +1,7 @@
 docker
 ======
 
-[![Ansible Role](https://img.shields.io/ansible/role/3872.svg)](https://galaxy.ansible.com/list#/roles/3872)
+[![Build Status](https://travis-ci.org/kbrebanov/ansible-docker.svg?branch=master)](https://travis-ci.org/kbrebanov/ansible-docker)
 
 Installs Docker.
 
