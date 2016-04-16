@@ -2,4 +2,4 @@
 # vars file for docker (Ubuntu specific)
 
 docker_packages:
-  - lxc-docker-{{ docker_version }}
+  - docker-engine={{ docker_version }}*

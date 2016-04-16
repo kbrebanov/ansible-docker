@@ -15,7 +15,7 @@ Role Variables
 
 | Name           | Default | Description                  |
 |:---------------|:--------|:-----------------------------|
-| docker_version | 1.9.0   | Version of Docker to install |
+| docker_version | 1.11.0  | Version of Docker to install |
 
 Dependencies
 ------------
@@ -30,13 +30,6 @@ Install docker
 - hosts: all
   roles:
     - kbrebanov.docker
-```
-
-Install older version of docker
-```
-- hosts: all
-  roles:
-    - { role: kbrebanov.docker, docker_version: 1.3.3 }
 ```
 
 License
