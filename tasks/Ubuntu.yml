@@ -13,7 +13,7 @@
 - name: Add Docker APT repository
   become: yes
   apt_repository:
-    repo: 'deb https://apt.dockerproject.org/repo ubuntu-trusty main'
+    repo: 'deb https://apt.dockerproject.org/repo ubuntu-{{ hostvars[inventory_hostname].ansible_lsb.codename }} main'
     state: present
   tags:
     - docker
